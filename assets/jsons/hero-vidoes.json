@@ -1,0 +1,23 @@
+[
+    {
+      "type": "video",
+      "src": "/assets/hero-carousel/1.mp4",
+      "link": "https://example.com/page1"
+    },
+    {
+      "type": "video",
+      "src": "/assets/hero-carousel/2.mp4",
+      "link": "https://example.com/page2"
+    },
+    {
+      "type": "video",
+      "src": "/assets/hero-carousel/3.mp4",
+      "link": "https://example.com/page3"
+    },
+    {
+      "type": "image",
+      "src": "/assets/hero-carousel/2.jpg",
+      "link": "https://example.com/page4"
+    }
+  ]
+  
