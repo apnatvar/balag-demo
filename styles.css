@@ -684,7 +684,7 @@
     box-sizing: border-box;
     background: 
     radial-gradient(circle at center, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 0.85) 80%, #2b2b2b 100%),
-    url('./assets/Photos/IMG-20250603-WA0013.jpg') no-repeat center center / cover;
+    url('./assets/22.jpg') no-repeat center center / cover;
   }
 
   .content {
