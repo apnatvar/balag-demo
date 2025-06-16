@@ -2,37 +2,37 @@
     {
       "title": "Trailer 1",
       "categories": ["recents", "favourites"],
-      "image": "assets/Photos/IMG-20250603-WA0012.jpg",
+      "image": "assets/review-images/1.jpg",
       "link": "video1.html"
     },
     {
       "title": "Trailer 2",
       "categories": ["recents","favourites"],
-      "image": "assets/Photos/IMG-20250603-WA0034.jpg",
+      "image": "assets/review-images/2.jpg",
       "link": "video2.html"
     },
     {
       "title": "Trailer 3",
       "categories": ["recents","international"],
-      "image": "assets/Photos/IMG-20250603-WA0035.jpg",
+      "image": "assets/review-images/3.jpg",
       "link": "video3.html"
     },
     {
       "title": "Trailer 4",
       "categories": ["recents","celebrities"],
-      "image": "assets/Photos/IMG-20250603-WA0029.jpg",
+      "image": "assets/review-images/4.jpg",
       "link": "video4.html"
     },
     {
       "title": "Trailer 5",
       "categories": ["recents", "classics"],
-      "image": "assets/Photos/IMG-20250603-WA0042.jpg",
+      "image": "assets/review-images/5.jpg",
       "link": "video5.html"
     },
     {
         "title": "Trailer 5",
         "categories": ["recents", "classics", "international"],
-        "image": "assets/Photos/IMG-20250603-WA0026.jpg",
+        "image": "assets/review-images/6.jpg",
         "link": "video5.html"
     }
 ]
