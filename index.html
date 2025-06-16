@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Right Side Expandable Menu -->
+  <nav id="sideMenu">
+    <button id="menuToggle">☰ Menu</button>
+    <ul id="menuList">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section7">Section 7</a></li>
+      <li><a href="#" id="open-form-link">Contact Us</a></li>
+      <li><a href="/about.html" id="about-us">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Sections -->
+  <main>
+
+    <div id="intro-overlay">
+      <div class="intro-content">
+        <h1 class="main-text">Bala G Studios</h1>
+        </div>
+        <div class="intro-content">
+        <p class="fade-in-text">Come write your story with us...</p>
+      </div>
+    </div>
+
+    <section id="section1" class="hero">
+      <div id="hero-carousel" class="hero-carousel">
+        <button class="nav-button left">&#9664;</button>
+        <button class="nav-button right">&#9654;</button>
+        <!-- Videos will be injected here by JS -->
+      </div>
+    </section>
+
+    <section id="section2" class="trailer-section">
+      <h2 class="section-heading">Watch a Trailer</h2>
+    
+      <div class="filter-buttons">
+        <button data-filter="recents" class="filter-btn active">Recents</button>
+        <button data-filter="favourites" class="filter-btn">Favourites</button>
+        <button data-filter="international" class="filter-btn">International</button>
+        <button data-filter="celebrities" class="filter-btn">Celebrities</button>
+        <button data-filter="classics" class="filter-btn">Classics</button>
+      </div>
+    
+      <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Dynamically inserted carousel items go here -->
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-next">See More..</button>
+          </div>
+      </div>
+    </section>
+
+    <section id="section3" class="map-and-international-section">
+      <div class="section3-heading">
+        <h2>Film your story anywhere</h2>
+      </div>
+    
+      <div class="map-and-international-wrapper">
+        <!-- LEFT: India Map + Textbox Below -->
+        <div class="map-column">
+          <div class="map-column-inner">
+            <img loading="lazy" src="assets/india.svg" alt="India Map" id="india-map" />
+          </div>
+          <div class="india-textbox">
+            <h3>Nationwide Presence</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi consequuntur odit voluptatem laboriosam accusantium explicabo impedit ipsam dolorum voluptatum natus consectetur necessitatibus ab omnis ducimus tempore odio, dolore totam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi consequuntur odit voluptatem laboriosam accusantium explicabo impedit ipsam dolorum voluptatum natus consectetur necessitatibus ab omnis ducimus tempore odio, dolore totam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi consequuntur odit voluptatem laboriosam accusantium explicabo impedit ipsam dolorum voluptatum natus consectetur necessitatibus ab omnis ducimus tempore odio, dolore totam.</p>
+          </div>
+        </div>
+    
+        <!-- RIGHT: 3 International Images with Hover Text -->
+        <div class="international-column">
+          <div class="international-image-box">
+            <img loading="lazy" src="assets/intLocations/loc1.jpg" alt="Paris" />
+            <div class="overlay-on-hover">
+              <h3>Paris, France</h3>
+              <p>Romantic cityscapes, cinematic shots, timeless storytelling.</p>
+            </div>
+          </div>
+    
+          <div class="international-image-box">
+            <img loading="lazy" src="assets/intLocations/loc2.jpg" alt="New York" />
+            <div class="overlay-on-hover">
+              <h3>New York, USA</h3>
+              <p>Concrete jungles, urban energy, powerful narratives.</p>
+            </div>
+          </div>
+    
+          <div class="international-image-box">
+            <img loading="lazy" src="assets/intLocations/loc3.jpg" alt="Tokyo" />
+            <div class="overlay-on-hover">
+              <h3>Tokyo, Japan</h3>
+              <p>Futuristic vibes, cultural fusion, unforgettable frames.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="section3-footer">
+        <h2>Where do you want your story written?</h2>
+      </div>
+    </section>
+      
+    <section id="section5" class="gallery-container">
+      <!-- <h2 class="section-heading">I think it is best to delete this heading</h2> -->
+        <div class="carouselgallery" id="carousel-gallery">
+          <div class="carousel-gallery-row" id="row-1"></div>
+          <div class="carousel-gallery-row" id="row-2"></div>
+          <div class="carousel-gallery-row" id="row-3"></div>
+          <div class="carousel-gallery-row" id="row-4"></div>
+        </div>  
+    </section> 
+
+    <section id="section6" class="scroll-reveal">
+      <div class="content">
+        <h2>Has Typewriter Animation</h2>
+        <div class="pinstripe"></div>
+        <p class="subheading">Needs a black and white Background</p>
+      </div>
+    </section>
+
+    <section id="section8" class="video-section">
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="/assets/last-section-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    
+      <!-- Dimming Overlay -->
+      <div class="video-overlay"></div>
+    
+      <!-- Overlay Text Content -->
+      <div class="video-content">
+    
+        <!-- Left Side: Title + Caption -->
+        <div class="video-left-text">
+          <h2>Unforgettable Moments</h2>
+          <p>Every event we plan leaves a lasting impression.</p>
+        </div>
+    
+        <!-- Right Side: Stats -->
+        <div class="video-right-stats">
+            <div class="stat-block">
+            <div class="stat-number">350+</div>
+            <div class="stat-label">Weddings Celebrated</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">25</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">4.9★</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Form Overlay -->
+  <div id="form-overlay" class="overlay hidden">
+    <div class="form-container">
+      <h2>Request a Callback</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required />
+
+        <label for="whatsapp">WhatsApp Number</label>
+        <input type="tel" name="whatsapp" id="whatsapp" placeholder="+911239874560" required />
+
+        <label for="email">Email ID</label>
+        <input type="email" name="email" id="email" placeholder="you@example.com"/>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="consent" value="Yes" required />
+          I consent to being contacted at the Pho No/ email provided.
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="response-message"></p>
+    </div>
+  </div>
+
+  <script src="script-main.js"></script>
+
+  <script>
+    const openLink = document.getElementById('open-form-link');
+    const overlay = document.getElementById('form-overlay');
+    const content = document.getElementsByTagName('main');
+    const form = document.getElementById('contact-form');
+    const responseMessage = document.getElementById('response-message');
+
+    openLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      overlay.classList.remove('hidden');
+      content.classList.add('blurred');
+    });
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const data = new FormData(form);
+
+      fetch('https://script.google.com/macros/s/AKfycbzDmbQOsdeL7TmXO7_WInAXhloMroALIOFJhqZdp1vXjcLSN-qKL1Ce1r5qqzkgBkXx/exec', {
+        method: 'POST',
+        body: data
+      })
+      .then(response => {
+        if (response.ok) {
+          responseMessage.textContent = 'Form submitted successfully!';
+          responseMessage.style.color = 'green';
+          form.reset();
+
+          setTimeout(() => {
+            overlay.classList.add('hidden');
+            content.classList.remove('blurred');
+            responseMessage.textContent = '';
+          }, 2000);
+        } else {
+          responseMessage.textContent = 'There was a problem submitting the form.';
+          responseMessage.style.color = 'red';
+        }
+      })
+      .catch(error => {
+        responseMessage.textContent = 'Error: ' + error.message;
+        responseMessage.style.color = 'red';
+      });
+    });
+
+    // Optional: close overlay on click outside form
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        overlay.classList.add('hidden');
+        content.classList.remove('blurred');
+        responseMessage.textContent = '';
+      }
+    });
+  </script> 
+</body>
+</html>
