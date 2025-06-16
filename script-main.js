@@ -31,7 +31,7 @@ let interval;
 const carousel = document.getElementById('hero-carousel');
 
 function loadSlides() {
-  fetch('/assets/jsons/hero-vidoes.json')
+  fetch('assets/jsons/hero-vidoes.json')
     .then(response => response.json())
     .then(data => {
       slides = data;
@@ -144,7 +144,7 @@ const carouselTrack = document.getElementById('carouselTrack');
 const filterButtons = document.querySelectorAll('.filter-btn');
 
 // Load JSON data
-fetch('/assets/jsons/trailers.json')
+fetch('assets/jsons/trailers.json')
   .then(response => response.json())
   .then(data => {
     trailerData = data;
@@ -239,7 +239,7 @@ if (document.getElementById("carousel-gallery")) {
         const randNum = Math.floor(Math.random() * maxImages) + 1;
         const width = 80 + Math.floor(Math.random() * 100);
 
-        img.src = `/assets/auto-carousel/${randNum}.jpg`;
+        img.src = `assets/auto-carousel/${randNum}.jpg`;
         img.alt = `Carousel ${i}-${j}`;
         img.style.width = `${width}px`;
 
@@ -274,7 +274,7 @@ document.addEventListener('Load', () => {
 
   // Ensure map image is fully loaded before placing pins
   function initializePins() {
-    fetch('/assets/jsons/locations.json')
+    fetch('assets/jsons/locations.json')
       .then(response => response.json())
       .then(locations => {
         locations.forEach(location => {
