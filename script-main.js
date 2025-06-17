@@ -309,21 +309,20 @@ document.addEventListener("DOMContentLoaded", initializePins());
 
 
 // section 6
-document.addEventListener("scroll", () => {
-  const section = document.getElementById('section6');
+document.addEventListener("DOMContentLoaded", () => {
+  const target = document.getElementById("content-h2");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  const observer = new IntersectionObserver(
+    ([entry], observer) => {
       if (entry.isIntersecting) {
-        section.classList.add('revealed');
-        observer.disconnect(); // optional: remove if you want it to trigger only once
+        target.classList.add("animate");
+        observer.unobserve(target); 
       }
-    });
-  }, {
-    threshold: 0.3
-  });
-
-  observer.observe(section);
+    },
+    {
+      threshold: 0.3, 
+    }
+  );
+  observer.observe(target);
 });
-
 // section 6
