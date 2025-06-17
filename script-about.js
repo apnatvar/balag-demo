@@ -3,7 +3,7 @@ async function loadReviews() {
     try {
       const response = await fetch('assets/jsons/reviews.json');
       const allReviews = await response.json();
-
+      console.log('Reviews Loaded from JSONs');
       // Shuffle and pick 5 random reviews (no repeats)
       const selected = allReviews
         .sort(() => 0.5 - Math.random())
