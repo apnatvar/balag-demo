@@ -30,5 +30,5 @@ async function loadReviews() {
     }
   }
 
-  document.addEventListener("load", loadReviews);
+  document.addEventListener("DOMContentLoaded", loadReviews());
 // section 7
