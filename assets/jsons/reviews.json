@@ -1,31 +1,31 @@
 [
     {
-      "image": "/assets/review-images/1.jpg",
+      "image": "assets/review-images/1.jpg",
       "review": "A magical experience from start to finish.",
       "name": "Ananya & Rahul"
     },
     {
-      "image": "/assets/review-images/6.jpg",
+      "image": "assets/review-images/6.jpg",
       "review": "We felt so taken care of throughout!",
       "name": "Neha & Saurabh"
     },
     {
-      "image": "/assets/review-images/5.jpg",
+      "image": "assets/review-images/5.jpg",
       "review": "Truly unforgettable service and kindness.",
       "name": "Priya & Akash"
     },
     {
-      "image": "/assets/review-images/4.jpg",
+      "image": "assets/review-images/4.jpg",
       "review": "Everything exceeded our expectations!",
       "name": "Sneha & Rohit"
     },
     {
-      "image": "/assets/review-images/3.jpg",
+      "image": "assets/review-images/3.jpg",
       "review": "Thank you for making our day so special.",
       "name": "Ayesha & Karan"
     },
     {
-      "image": "/assets/review-images/2.jpg",
+      "image": "assets/review-images/2.jpg",
       "review": "Absolutely wonderful planning and execution.",
       "name": "Meera & Arjun"
     }
