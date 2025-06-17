@@ -274,7 +274,7 @@ function latLonToPercent(lat, lon) {
 // Ensure map image is fully loaded before placing pins
 async function initializePins() {
   try {
-    fetch('/assets/jsons/locations.json')
+    fetch('assets/jsons/locations.json')
       .then(response => response.json())
       .then(locations => {
         locations.forEach(location => {
