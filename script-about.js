@@ -1,7 +1,7 @@
 // section 7
 async function loadReviews() {
     try {
-      const response = await fetch('/assets/jsons/reviews.json');
+      const response = await fetch('assets/jsons/reviews.json');
       const allReviews = await response.json();
 
       // Shuffle and pick 5 random reviews (no repeats)
