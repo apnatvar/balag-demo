@@ -312,7 +312,7 @@ document.addEventListener('Load', () => {
 
 
 // section 6
-document.addEventListener("load", () => {
+document.addEventListener("scroll", () => {
   const section = document.getElementById('section6');
 
   const observer = new IntersectionObserver(entries => {
