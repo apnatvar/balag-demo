@@ -253,33 +253,33 @@ if (document.getElementById("carousel-gallery")) {
 // Section 4 carousel 
 
 // Section 3
-document.addEventListener('Load', () => {
-  const mapContainer = document.querySelector('.map-column-inner');
-  const mapImage = document.getElementById('india-map');
+const mapContainer = document.querySelector('.map-column-inner');
+const mapImage = document.getElementById('india-map');
 
-  // Map bounds for the India SVG
-  const bounds = {
-    topLat: 37.1,
-    bottomLat: 8.9,
-    leftLng: 68.3,
-    rightLng: 97.4
-  };
+// Map bounds for the India SVG
+const bounds = {
+  topLat: 37.1,
+  bottomLat: 8.9,
+  leftLng: 68.3,
+  rightLng: 97.4
+};
 
-  // Convert lat/lon to % coordinates relative to map container
-  function latLonToPercent(lat, lon) {
-    const xPercent = ((lon - bounds.leftLng) / (bounds.rightLng - bounds.leftLng)) * 100;
-    const yPercent = ((bounds.topLat - lat) / (bounds.topLat - bounds.bottomLat)) * 100;
-    return { xPercent, yPercent };
-  }
+// Convert lat/lon to % coordinates relative to map container
+function latLonToPercent(lat, lon) {
+  const xPercent = ((lon - bounds.leftLng) / (bounds.rightLng - bounds.leftLng)) * 100;
+  const yPercent = ((bounds.topLat - lat) / (bounds.topLat - bounds.bottomLat)) * 100;
+  return { xPercent, yPercent };
+}
 
-  // Ensure map image is fully loaded before placing pins
-  function initializePins() {
-    fetch('assets/jsons/locations.json')
+// Ensure map image is fully loaded before placing pins
+async function initializePins() {
+  try {
+    fetch('/assets/jsons/locations.json')
       .then(response => response.json())
       .then(locations => {
         locations.forEach(location => {
           const coords = latLonToPercent(location.lat, location.lon);
-
+          console.log("pins firing")
           const pin = document.createElement('div');
           pin.className = 'map-pin';
           pin.style.left = `${coords.xPercent}%`;
@@ -299,15 +299,12 @@ document.addEventListener('Load', () => {
           mapContainer.appendChild(pin);
         });
       })
-      .catch(error => console.error('Error fetching location data:', error));
+  } catch (err) {
+    console.error('Error fetching location data:', err);
   }
+};
 
-  // Run only after the image is loaded
-  if (mapImage.complete) {
-    initializePins();
-  }
-});
-
+document.addEventListener("DOMContentLoaded", initializePins());
 // Section 3
 
 
